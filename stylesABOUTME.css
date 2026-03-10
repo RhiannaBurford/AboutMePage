@@ -1,0 +1,43 @@
+body
+{
+    text-align:left;
+    color:black;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #c8f7ec;
+    font-size:30px;
+    margin: 0px;
+
+}
+
+.page-frame
+{
+    border: 10px solid #46557d;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+h1
+{
+    color:#2e4542;
+    text-align:center;
+    font-size:70px;
+    font-family: "Chalkduster",fantasy;
+}
+
+h2
+{
+    font-size:40px;
+}
+
+
+abbr[title] {
+    text-decoration: underline dotted; /* makes it clear it’s an abbreviation */
+    cursor: help;                       /* shows help cursor */
+}
+
+.custom-btn {
+    font-size: 24px;
+    padding: 15px 30px;
+
+}

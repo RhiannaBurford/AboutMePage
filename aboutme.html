@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="stylesABOUTME.css" rel="stylesheet">
+        <title>My Webpage</title>
+
+    </head>
+    <script>
+        window.onload = function() {
+        const text = document.getElementById("scroll-text");
+        let position = window.innerWidth;
+        text.style.position = "absolute";
+        text.style.whiteSpace = "nowrap";
+
+        function scrollText() {
+            position -= 2;
+            if (position < -text.offsetWidth) {
+                position = window.innerWidth;
+            }
+            text.style.left = position + "px";
+            requestAnimationFrame(scrollText);
+        }
+
+        scrollText();
+    };
+
+        scrollText(); // start the animation
+    </script>
+    <body>
+        <div class="page-frame">
+        <h1 id="scroll-text"><b>ABOUT ME</b></h1>
+        <br>
+        <br>
+        <br>
+        <p> I am from the United Kingdom and I am a first-year undergraduate studying Computer Science at the
+            University of Warwick :) </p>
+
+            <p><br>I have always been interested in <abbr class = "abbr" title="Science, Technology, Engineering and Mathematics">STEM</abbr> and decided on Computer Science because I love the satisfaction
+            of solving problems and its myriad of applications in everyday life. </p>
+
+            <p><br>Something I am quite proud of is my rock climbing route generation app, which I completed for my International
+            Baccalaureate diploma. I have also met Sir Tim Berners-Lee, which was definitely inspiring!</p>
+
+           <p> Check out my <a href="https://www.linkedin.com/in/rhianna-burford-34bb49304" target="_blank">LinkedIn profile</a>.
+        </p>
+        <a class="btn btn-primary custom-btn" href="index.html" role="button">Go back</a>
+        </div>
+    </body>
+
+</html>
